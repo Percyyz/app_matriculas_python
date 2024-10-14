@@ -4,17 +4,7 @@
 - Mostrar la lista de todos los matriculados.
 - Filtrar matriculados por programa de estudios.
 """
-lista_alumnos = []
-while True:
-    nombre = input("Ingresa el nombre del alumno (o escribe 'salir' para terminar): ")
-    if nombre.lower() == 'salir':
-        break
-    lista_alumnos.append(nombre)
-print("Lista de alumnos ingresada:", lista_alumnos)
 
-# alumnos={}
-
-# print(lista_alumnos)
 
 cantidad_alumnos = int(input("¿Cuántos alumnos deseas ingresar? "))
 lista_alumnos = []
