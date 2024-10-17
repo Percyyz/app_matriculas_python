@@ -83,3 +83,20 @@ while True:
         print("opcion erronea")
 
 print(lista_alumnos)
+
+# |--------------------------------------------------------------------tarea-----------------------------------------------------------------------|
+# |----------------------------------------------------------modularizar las funciones-------------------------------------------------------------|
+
+from mensaje_menu import mensaje_menu
+from datos_alumno import ingresar_datos_alumno, lista_alumnos
+
+while True:
+    menu_opciones = input(mensaje_menu())
+    if menu_opciones.lower() == "n":
+        print("Saliendo del sistema")
+        break
+    elif menu_opciones.lower() == "s":
+        ingresar_datos_alumno()
+    else:
+        print("Opción errónea")
+print(lista_alumnos)
